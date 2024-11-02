@@ -9,9 +9,34 @@
 <body>
     <div class="container">
         <h1>Generate a <br><span>Random Password</span></h1>
-        <div class="diplay">
+        <div class="display">
             <input type="text" id="password" placeholder="Password">
         </div>
+        <button>Generate Password</button>
     </div>
+    
 </body>
+
+<script>
+        const button = document.querySelector('button');
+
+        button.addEventListener('click' , ()=>{
+            console.log("I got clicked");
+            let password = '';
+            const Ucharacter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const Lcharacter = "abcdefghijklmnopqrstuvwxyz";
+            const number = "0123456789";
+            const symbol = "!@#$%^&*()_+|?{}[]";
+            const allChars = Ucharacter + Lcharacter + number + symbol;
+            
+            while(password.length < 12) {
+                password += allChars[Math.floor(Math.random()*allChars.length)]
+            }
+            const generatedPassword = document.querySelector('input');
+            console.log(generatedPassword);
+            
+            generatedPassword.value = password; 
+
+        })
+    </script>
 </html>

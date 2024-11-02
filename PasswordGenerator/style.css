@@ -37,3 +37,15 @@ body {
     border-bottom: 4px solid green;
     padding-bottom: 7px;
 }
+
+.display input {
+    border: 0;
+    outline : 0;
+    font-size: 24px;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    background: #a92c09;
+}
