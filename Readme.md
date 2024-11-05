@@ -1,0 +1,1 @@
+#QR Code Generator -> [text](https://qr-generator-d3c712.netlify.app/)
