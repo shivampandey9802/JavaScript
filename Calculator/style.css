@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(0, 255, 140, 0.841), rgb(0, 208, 255));
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: right;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+.change {
+    background-color: #00a8ff;
+    color: white;
+}
+
+.change:hover {
+    background-color: #007bbf;
+}
+
+.calculate {
+    grid-column: span 2;
+    background-color: #ff6347;
+    color: white;
+}
+
+.calculate:hover {
+    background-color: #e5533d;
+}
+
+.delete {
+    background-color: #ff6347;
+    color: white;
+}
+
+.delete:hover {
+    background-color: #e5533d;
+}
